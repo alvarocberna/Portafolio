@@ -1,42 +1,97 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+ /* :root {
+   --background: #399cc0;
+   --foreground: #171717;
+ }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
 
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
+ @media (prefers-color-scheme: dark) {
+   :root {
+     --background: #0a0a0a;
+     --foreground: #ededed;
+   }
+ }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+ html,
+ body {
+   max-width: 100vw;
+   overflow-x: hidden;
+   background-color: #399cc0;
+ }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-}
+ body {
+   color: var(--foreground);
+   background: var(--background);
+   font-family: Arial, Helvetica, sans-serif;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+ }
+
+ * {
+   box-sizing: border-box;
+   padding: 0;
+   margin: 0;
+ }
+
+ a {
+   color: inherit;
+   text-decoration: none;
+ }
+
+ @media (prefers-color-scheme: dark) {
+   html {
+     color-scheme: dark;
+   }
+ } */
+
+ .navbtn {
+   border: 1px solid #545454;
+   padding: 10px 0px 10px 0px;
+   font-weight: 500;
+   margin: 0px 9px 0px 9px;
+   border-radius: 9px;
+   text-align: center;
+   color: #545454;
+   text-decoration: none;
+   align-content: center;
+   transition: 0.3s;
+ }
+
+ .navbtn:hover {
+   transition: 0.3s;
+   color: #0cc0df;
+   border: 1px solid #0cc0df;
+ }
+
+ .imgPerfil {
+   border-radius: 300px;
+   object-fit: contain;
+ }
+
+ .divTec {
+   border: 1px solid #0cc0df;
+   border-radius: 15px;
+ }
+
+ .divProySty {
+   border: 1px solid #399cc0;
+   border-radius: 20px;
+ }
+
+ .proyImgFilter {
+   border-radius: 15px;
+   width: 100%;
+   height: 100%;
+   transition: 0.4s;
+ }
+
+ .proyImgFilter:hover {
+   background: #399cc0;
+   opacity: 0.2;
+   transition: 0.4s;
+ }
+
+ .mb100 {
+   margin-bottom: 100px;
+ }
