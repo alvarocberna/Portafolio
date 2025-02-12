@@ -6,6 +6,11 @@ $theme-colors: (
     "secondary": $secondary,
 );
 
+:root {
+    --primary: #399cc0;
+    --secondary: #02B090;
+}
+
 // Create your own map
 $custom-colors: (
     "tertiary": #2F1C6A,

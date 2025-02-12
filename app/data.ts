@@ -3,11 +3,11 @@ export const data = {
     perfilPersonal: {
         fotoPerfil: '/imgs/img_alvaro_cañete.jpg',
         descripcion: [
-            'Mi nombre es Alvaro Cañete, 29 años actualmente viviendo en Viña del Mar. Respecto a mi formación, me encuentro finalizando la carrera de Analista Programador Computacional en el instituto profesional Duoc UC.',
-            'Como se puede apreciar en las secciones de tecnologías y proyectos, tengo experiencia tanto en front-end y back-end, siendo esta última el area de mayori interes, en la cual me encuentro perfeccionando con las tecnologías de NodeJS.',
-            'Actualmente me encuentro en la búsqueda de practica profesional, la cual, según lo establecido por Duoc, debe iniciar el dd-mm-aaaa.',
-            'Busco de preferencia una practica pagada, aunque todo es conversable, dependiendo de la posibilidad de continuidad, area tecnológica y modalidad de trabajo.',
-            'Si te interesa mi perfil y quieres hacerme una oferta, te invito a que me escribas:'
+            'Mi nombre es Álvaro Cañete, estudiante de la carrera de Analista Programador Computacional - Duoc UC. Tengo 29 años, de la comuna de Viña del Mar.',
+            'Como se puede apreciar en las secciones de tecnologías y proyectos, tengo experiencia tanto en las áreas de desarrollo front-end y back-end. Personalmente, tengo un gran interés por el desarrollo back-end, área en la cual me encuentro perfeccionando con la tecnología NodeJS.',
+            'Actualmente me encuentro en la búsqueda de practica profesional, la cual, según lo establecido por Duoc, debe ser inscrita la semana del 12 al 16 de mayo, para dar inicio el 19 de mayo, con una duración de 360 horas.',
+            'Busco de preferencia una practica pagada, aunque todo es conversable, dependiendo de la posibilidad de continuidad, área tecnológica y modalidad de trabajo.',
+            'Si te interesa mi perfil y quieres hacerme una oferta, te invito a que me escribas a continuación:'
         ]
     },
     tecnologias: [
@@ -71,6 +71,18 @@ export const data = {
             linkProyecto: 'https://www.nutreactivo.cl/',
             imgCode: '/imgs/img_code.jpg',
             linkRepositorio: 'https://www.google.com/'
+        }
+    ],
+    contacto: [
+        {
+            icon: '/imgs/img_wtsp.png',
+            direccion: '+56981620295',
+            link: 'https://www.google.com/'
+        },
+        {
+            icon: '/imgs/img_mail.png',
+            direccion: 'cberna.alvaro@gmail.com',
+            link: 'https://www.google.com/'
         }
     ]
 }

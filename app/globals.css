@@ -1,97 +1,86 @@
- /* :root {
-   --background: #399cc0;
-   --foreground: #171717;
- }
+/* General */
 
+body {
+  background-color: red;
+}
 
- @media (prefers-color-scheme: dark) {
-   :root {
-     --background: #0a0a0a;
-     --foreground: #ededed;
-   }
- }
+p {
+  font-size: 16px;
+  text-align: justify;
+}
 
- html,
- body {
-   max-width: 100vw;
-   overflow-x: hidden;
-   background-color: #399cc0;
- }
+.mb100 {
+  margin-bottom: 100px;
+}
 
+/* 1 - navbar */
 
+.navbtn {
+  border: 1px solid #545454;
+  padding: 10px 0px 10px 0px;
+  font-weight: 500;
+  margin: 0px 9px 0px 9px;
+  border-radius: 9px;
+  text-align: center;
+  color: #545454;
+  text-decoration: none;
+  align-content: center;
+  transition: 0.3s;
+}
 
- body {
-   color: var(--foreground);
-   background: var(--background);
-   font-family: Arial, Helvetica, sans-serif;
-   -webkit-font-smoothing: antialiased;
-   -moz-osx-font-smoothing: grayscale;
- }
+@media only screen and (max-width: 992px) {
+  .navbtn {
+    border: 1px solid white;
+    padding: 20px 0px 20px 0px;
+    margin: 0px 0px 0px 0px;
+  }
+}
 
- * {
-   box-sizing: border-box;
-   padding: 0;
-   margin: 0;
- }
+.navbtn:hover {
+  transition: 0.3s;
+  color: var(--primary);
+  border: 1px solid var(--primary);
+}
 
- a {
-   color: inherit;
-   text-decoration: none;
- }
+/* 2 - sobre mi */
 
- @media (prefers-color-scheme: dark) {
-   html {
-     color-scheme: dark;
-   }
- } */
+.imgPerfil {
+  border-radius: 300px;
+  object-fit: contain;
+  height: 300px;
+  width: 300px;
+}
 
- .navbtn {
-   border: 1px solid #545454;
-   padding: 10px 0px 10px 0px;
-   font-weight: 500;
-   margin: 0px 9px 0px 9px;
-   border-radius: 9px;
-   text-align: center;
-   color: #545454;
-   text-decoration: none;
-   align-content: center;
-   transition: 0.3s;
- }
+@media only screen and (max-width: 600px) {
+  .imgPerfil {
+    height: 300px;
+    width: 300px;
+  }
+}
 
- .navbtn:hover {
-   transition: 0.3s;
-   color: #0cc0df;
-   border: 1px solid #0cc0df;
- }
+/* 3 - tecnologias */
 
- .imgPerfil {
-   border-radius: 300px;
-   object-fit: contain;
- }
+.divTec {
+  border: 1px solid var(--primary);
+  border-radius: 15px;
+}
 
- .divTec {
-   border: 1px solid #0cc0df;
-   border-radius: 15px;
- }
+/* 4 - proyectos */
 
- .divProySty {
-   border: 1px solid #399cc0;
-   border-radius: 20px;
- }
+.divProySty {
+  border: 1px solid var(--primary);
+  border-radius: 20px;
+}
 
- .proyImgFilter {
-   border-radius: 15px;
-   width: 100%;
-   height: 100%;
-   transition: 0.4s;
- }
+.proyImgFilter {
+  border-radius: 15px;
+  width: 100%;
+  height: 100%;
+  transition: 0.4s;
+}
 
- .proyImgFilter:hover {
-   background: #399cc0;
-   opacity: 0.2;
-   transition: 0.4s;
- }
-
- .mb100 {
-   margin-bottom: 100px;
- }
+.proyImgFilter:hover {
+  background: var(--primary);
+  opacity: 0.2;
+  transition: 0.4s;
+}
