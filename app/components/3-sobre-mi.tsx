@@ -19,8 +19,10 @@ export default function SobreMi() {
                     <Image src={perfilPersonal.fotoPerfil} width={300} height={300} alt="img usuario"
                         className="imgPerfil m-auto mb-3" />
                 </div>
-                <div className="col-12 col-lg-7">
+                <div className="col-12 col-lg-7 d-flex flex-column">
                     {contenedor}
+                    <a href="#contacto" className="bg-primary text-white col-12 col-md-6 m-auto text-center py-2 rounded"
+                        style={{ textDecoration: 'none' }}>Contacto</a>
                 </div>
             </div>
         </div>

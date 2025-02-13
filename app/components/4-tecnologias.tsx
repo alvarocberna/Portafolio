@@ -1,11 +1,26 @@
 import { data } from "../data";
 const { tecnologias } = data;
+import iconstar from '../../public/imgs/img_blue_star.png';
+import Image from "next/image";
+import '../globals.css'
+
+function star(det: any) {
+    return (
+        <span className='d-flex'>
+            {Array.from({ length: det.valor }, (_, index) => (
+                <Image className="mb-0 ms-2" key={index} src={iconstar} width={15} height={15} alt="..."></Image>
+            ))}
+        </span>
+
+    )
+}
 
 export default function Tecnologias() {
+
     let contenedorDiv = tecnologias.map((e, index) => {
         let list = e.detalle.map((det: any, index: any) => {
             return (
-                <li key={index}>{det.tecnologia}: {det.valor}</li>
+                <li key={index} className="d-flex d-flex align-items-center">{det.tecnologia}: {star(det)}</li>
             )
         })
         return (
@@ -25,6 +40,13 @@ export default function Tecnologias() {
                 Tecnologías
             </h2>
             <div className="row col-10 col-md-9 d-flex justify-content-around m-auto">
+                <p className="mb-5 px-0">
+                    Breve resumen de las tecnologías con las que he trabajado y/o domino, acompañado de una
+                    estimación personal de mi nivel de conocimiento. He determinado una estrella para aquellas
+                    tecnologías con las que he trabajado en alguna ocasión, dos estrellas para las que he trabajado
+                    en algunas ocasiones con ellas y poseo un conocimiento mayor, y tres estrellas para las
+                    tecnologías con las que trabajo constantemente y tengo un conocimiento más profundo.
+                </p>
                 {contenedorDiv}
             </div>
         </div>

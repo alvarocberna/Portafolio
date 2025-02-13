@@ -16,7 +16,7 @@ export const data = {
             detalle: [
                 { tecnologia: 'Python', valor: 2 },
                 { tecnologia: 'Javascript', valor: 3 },
-                { tecnologia: 'Javascript', valor: 3 },
+                { tecnologia: 'Typescript', valor: 3 },
                 { tecnologia: 'Java', valor: 1 },
                 { tecnologia: 'NodeJS', valor: 3 }
             ]
@@ -27,8 +27,8 @@ export const data = {
                 { tecnologia: 'React', valor: 3 },
                 { tecnologia: 'NextJS', valor: 3 },
                 { tecnologia: 'Angular', valor: 2 },
-                { tecnologia: 'Django', valor: 1 },
-                { tecnologia: 'Ionic', valor: 3 },
+                { tecnologia: 'Django', valor: 2 },
+                { tecnologia: 'Ionic', valor: 1 },
             ]
         },
         {
@@ -48,41 +48,45 @@ export const data = {
     ],
     proyectos: [
         {
-            titulo: 'Nutreactivo',
-            descripcion: 'fmeif3',
+            titulo: 'Ciclolegal',
+            descripcion: 'Proyecto web para el equipo de abogados Ciclolegal.',
             tecnologias: [
                 'Javascript',
                 'Nextjs',
-                'html'
+                'Bootstrap'
             ],
-            imgProyecto: '/imgs/img_proyecto_nutreactivo.png',
-            linkProyecto: 'https://www.nutreactivo.cl/',
+            imgProyecto: '/imgs/img_proyecto_ciclolegal.png',
+            linkProyecto: 'https://ciclolegal.cl/',
             imgCode: '/imgs/img_code.jpg',
-            linkRepositorio: 'https://www.google.com/'
+            linkRepositorio: 'https://github.com/alvarocberna/Ciclolegal_front.git'
         },
         {
-            titulo: 'Ciclolegal',
-            descripcion: 'fmeifewferf3',
+            titulo: 'Nutreactivo',
+            descripcion: 'Proyecto web personal.',
             tecnologias: [
                 'Javascript',
-                'Nextjs'
+                'Nextjs',
+                'Bootstrap'
             ],
             imgProyecto: '/imgs/img_proyecto_nutreactivo.png',
             linkProyecto: 'https://www.nutreactivo.cl/',
             imgCode: '/imgs/img_code.jpg',
-            linkRepositorio: 'https://www.google.com/'
+            linkRepositorio: 'https://github.com/alvarocberna/Nutreactivo_front.git'
         }
     ],
-    contacto: [
-        {
-            icon: '/imgs/img_wtsp.png',
-            direccion: '+56981620295',
-            link: 'https://www.google.com/'
-        },
-        {
-            icon: '/imgs/img_mail.png',
-            direccion: 'cberna.alvaro@gmail.com',
-            link: 'https://www.google.com/'
-        }
-    ]
+    contacto: {
+        descripcion: 'Información de contacto:',
+        infoContacto: [
+            {
+                icon: '/imgs/img_wtsp.png',
+                direccion: '+56981620295',
+                link: 'https://www.google.com/'
+            },
+            {
+                icon: '/imgs/img_mail.png',
+                direccion: 'cberna.alvaro@gmail.com',
+                link: 'https://www.google.com/'
+            }
+        ]
+    }
 }

@@ -2,7 +2,7 @@ import Image from "next/image";
 import { data } from "../data";
 import '../globals.css';
 
-const { perfilPersonal, tecnologias, proyectos } = data;
+const { proyectos } = data;
 
 interface IntVerProyecto {
     link: string,
@@ -12,14 +12,16 @@ interface IntVerProyecto {
 
 function VerProyecto({ link, img, btn }: IntVerProyecto) {
     return (
-        <a href={link} className="col-6 mx-2 d-flex justify-content-center align-items-center " target='_blank'
-            rel='noreferrer' style={{ position: 'relative', border: '1px solid #399cc0', borderRadius: '15px', height: '260px' }}>
-            <Image src={img} alt="..." width={300} height={300} className="col-12 h-100" style={{ objectFit: 'cover', position: 'absolute', borderRadius: '15px' }} />
-            <div className="proyImgFilter" style={{ position: 'absolute' }} />
-            <button className="bg-primary px-4 py-2 rounded m-auto" style={{ border: 'none', color: 'white', position: 'absolute' }}>
-                {btn}
-            </button>
-        </a>
+        <div className="col-12 col-lg-6 d-flex">
+            <a href={link} className="col-11 m-auto d-flex justify-content-center align-items-center mb-3" target='_blank'
+                rel='noreferrer' style={{ position: 'relative', border: '1px solid #399cc0', borderRadius: '15px', height: '260px' }}>
+                <Image src={img} alt="..." width={300} height={300} className="col-12 h-100" style={{ objectFit: 'cover', position: 'absolute', borderRadius: '15px' }} />
+                <div className="proyImgFilter" style={{ position: 'absolute' }} />
+                <button className="bg-primary px-4 py-2 rounded m-auto" style={{ border: 'none', color: 'white', position: 'absolute' }}>
+                    {btn}
+                </button>
+            </a>
+        </div>
     )
 }
 
@@ -32,7 +34,7 @@ export default function Proyectos() {
         })
         return (
             <div className="col-10 col-md-9 m-auto d-flex flex-column py-4 mb-5 divProySty" key={index}>
-                <div className="titulo col-11 m-auto mb-3" style={{ borderBottom: '2px solid #0cc0df' }}>
+                <div className="titulo col-11 m-auto mb-3 titleLine">
                     <h3 className="h3">Proyecto: {proy.titulo}</h3>
                 </div>
                 <div className="descripcion col-11 m-auto mb-3">
@@ -46,7 +48,7 @@ export default function Proyectos() {
                         {tecnologia}
                     </ul>
                 </div>
-                <div className="video codigo col-11 m-auto mb-3 d-flex flex-column flex-md-row justify-content-between">
+                <div className="col-11 m-auto mb-3 d-flex flex-column flex-lg-row justify-content-between">
                     <VerProyecto link={proy.linkProyecto} img={proy.imgProyecto} btn="Ver proyecto" />
                     <VerProyecto link={proy.linkRepositorio} img={proy.imgCode} btn="Ver repositorio" />
                 </div>
