@@ -25,7 +25,7 @@ function VerProyecto({ link, img, btn }: IntVerProyecto) {
     )
 }
 
-export default function Proyectos() {
+export default function Projects() {
     const contenedor = proyectos.map((proy, index) => {
         const tecnologia = proy.tecnologias.map((tec, index) => {
             return (
