@@ -4,7 +4,12 @@ import iconstar from '../../public/imgs/img_blue_star.png';
 import Image from "next/image";
 import '../globals.css'
 
-function star(det: any) {
+interface DetalleTec {
+    tecnologia: string;
+    valor: number;
+}
+
+function star(det: DetalleTec) {
     return (
         <span className='d-flex'>
             {Array.from({ length: det.valor }, (_, index) => (
@@ -17,8 +22,8 @@ function star(det: any) {
 
 export default function Tecnologias() {
 
-    let contenedorDiv = tecnologias.map((e, index) => {
-        let list = e.detalle.map((det: any, index: any) => {
+    const contenedorDiv = tecnologias.map((e, index) => {
+        const list = e.detalle.map((det: DetalleTec, index: number) => {
             return (
                 <li key={index} className="d-flex d-flex align-items-center">{det.tecnologia}: {star(det)}</li>
             )

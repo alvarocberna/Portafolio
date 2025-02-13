@@ -26,8 +26,8 @@ function VerProyecto({ link, img, btn }: IntVerProyecto) {
 }
 
 export default function Proyectos() {
-    let contenedor = proyectos.map((proy, index) => {
-        let tecnologia = proy.tecnologias.map((tec, index) => {
+    const contenedor = proyectos.map((proy, index) => {
+        const tecnologia = proy.tecnologias.map((tec, index) => {
             return (
                 <li key={index}>{tec}</li>
             )

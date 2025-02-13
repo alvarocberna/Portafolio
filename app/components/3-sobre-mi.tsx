@@ -3,8 +3,8 @@ import { data } from "../data";
 const { perfilPersonal } = data;
 
 export default function SobreMi() {
-    let descripcion = perfilPersonal.descripcion;
-    let contenedor = descripcion.map((parr, index) => {
+    const descripcion = perfilPersonal.descripcion;
+    const contenedor = descripcion.map((parr, index) => {
         return (
             <p className="mb-3" key={index}>
                 {parr}

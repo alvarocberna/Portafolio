@@ -6,7 +6,7 @@ const { contacto } = data;
 
 
 export default function Contacto() {
-    let contenedor = contacto.infoContacto.map((cont, index) => {
+    const contenedor = contacto.infoContacto.map((cont, index) => {
         return (
             <div key={index} className='col-12 col-md-6 d-flex mb-3'>
                 <a className='col-10 m-auto border rounded d-flex flex-column py-4' href={cont.link} style={{ textDecoration: 'none' }}>
