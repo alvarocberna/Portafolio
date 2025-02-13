@@ -5,7 +5,7 @@ import '../globals.css';
 import { useState } from 'react';
 
 export default function Navbar() {
-    const [open, setOpen] = useState(true);
+    const [open, setOpen] = useState(false);
     return (
         <nav className="navbar navbar-expand-lg py-3">
             <div className="container-fluid">
