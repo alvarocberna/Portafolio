@@ -1,7 +1,7 @@
 
 export default function Footer() {
     return (
-        <div className="containter-fluid py-5" style={{ background: '#399cc0', marginTop: '150px' }}>
+        <div className="containter-fluid py-5" style={{ background: '#399cc0', marginTop: '140px' }}>
             <div className="col-12 py-5">
                 <div className='col-10 col-md-9 col-lg-8 m-auto d-flex flex-column align-items-center' style={{ position: 'relative' }}>
                     <div className='w-100' style={{ height: '1px', backgroundColor: 'white' }}></div>
