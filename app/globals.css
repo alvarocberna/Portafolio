@@ -76,6 +76,18 @@ p {
   border-bottom: 2px solid var(--primary);
 }
 
+.proyImg {
+  height: 260px;
+  border: 1px solid var(--primary);
+  border-radius: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+  .proyImg {
+    height: 180px;
+  }
+}
+
 .proyImgFilter {
   border-radius: 15px;
   width: 100%;

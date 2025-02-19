@@ -13,8 +13,8 @@ interface IntVerProyecto {
 function VerProyecto({ link, img, btn }: IntVerProyecto) {
     return (
         <div className="col-12 col-lg-6 d-flex">
-            <a href={link} className="col-11 m-auto d-flex justify-content-center align-items-center mb-3" target='_blank'
-                rel='noreferrer' style={{ position: 'relative', border: '1px solid #399cc0', borderRadius: '15px', height: '260px' }}>
+            <a href={link} className="col-12 col-md-11 m-auto d-flex justify-content-center align-items-center mb-3 proyImg" target='_blank'
+                rel='noreferrer' style={{ position: 'relative' }}>
                 <Image src={img} alt="..." width={300} height={300} className="col-12 h-100" style={{ objectFit: 'cover', position: 'absolute', borderRadius: '15px' }} />
                 <div className="proyImgFilter" style={{ position: 'absolute' }} />
                 <button className="bg-primary px-4 py-2 rounded m-auto" style={{ border: 'none', color: 'white', position: 'absolute' }}>
