@@ -9,7 +9,7 @@ export default function Navbar() {
     return (
         <nav className="navbar navbar-expand-lg py-3">
             <div className="container-fluid">
-                <a className="navbar-brand ms-2" href="/">PORTAFOLIO</a>
+                <Link className="navbar-brand ms-2" href="/">PORTAFOLIO</Link>
                 <button className="navbar-toggler" onClick={() => { setOpen(!open) }} id='btnMenu' type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="true" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
