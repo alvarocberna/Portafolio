@@ -37,6 +37,7 @@ export const data = {
                 { tecnologia: 'NextJS', valor: 2 },
                 { tecnologia: 'Angular', valor: 2 },
                 { tecnologia: 'Bootstrap', valor: 2 },
+                { tecnologia: 'SEO', valor: 3 },
 
             ]
         },
