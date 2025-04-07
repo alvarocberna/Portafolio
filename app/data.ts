@@ -12,37 +12,51 @@ export const data = {
     },
     tecnologias: [
         {
-            titulo: 'Lenguajes & entornos de ejecución',
+            titulo: 'Lenguajes',
             detalle: [
                 { tecnologia: 'Python', valor: 2 },
                 { tecnologia: 'Javascript', valor: 3 },
                 { tecnologia: 'Typescript', valor: 3 },
                 { tecnologia: 'Java', valor: 1 },
-                { tecnologia: 'NodeJS', valor: 3 }
             ]
         },
         {
-            titulo: 'Frameworks & librerías',
+            titulo: 'Sistemas de gestión de bases de datos',
             detalle: [
-                { tecnologia: 'React', valor: 3 },
-                { tecnologia: 'NextJS', valor: 3 },
+                { tecnologia: 'Oracle', valor: 3 },
+                { tecnologia: 'MongoDB', valor: 2 },
+                { tecnologia: 'MySQL', valor: 2 },
+            ]
+        },
+        {
+            titulo: 'Front-end',
+            detalle: [
+                { tecnologia: 'HTML', valor: 2 },
+                { tecnologia: 'CSS', valor: 2 },
+                { tecnologia: 'React', valor: 2 },
+                { tecnologia: 'NextJS', valor: 2 },
                 { tecnologia: 'Angular', valor: 2 },
-                { tecnologia: 'Django', valor: 2 },
-                { tecnologia: 'Ionic', valor: 1 },
+                { tecnologia: 'Bootstrap', valor: 2 },
+
             ]
         },
         {
-            titulo: 'Bases de datos',
+            titulo: 'Back-end',
             detalle: [
-                { tecnologia: 'SQL', valor: 2 },
-                { tecnologia: 'Oracle', valor: 3 }
+                { tecnologia: 'Nodejs', valor: 3 },
+                { tecnologia: 'Express', valor: 2 },
+                { tecnologia: 'Django', valor: 2 },
+                { tecnologia: 'Docker', valor: 2 },
+                { tecnologia: 'Postman', valor: 2 },
+                { tecnologia: 'Jest', valor: 1 },
+                { tecnologia: 'APIs-REST', valor: 2 },
+
             ]
         },
         {
             titulo: 'Otras tecnologías & herramientas',
             detalle: [
                 { tecnologia: 'Git', valor: 3 },
-                { tecnologia: 'Bootstrap', valor: 3 },
             ]
         },
     ],

@@ -23,16 +23,24 @@ function star(det: DetalleTec) {
 export default function Tecnologias() {
 
     const contenedorDiv = tecnologias.map((e, index) => {
+        // const list = e.detalle.map((det: DetalleTec, index: number) => {
+        //     return (
+        //         <li key={index} className="d-flex d-flex align-items-center">{det.tecnologia}: {star(det)}</li>
+        //     )
+        // })
         const list = e.detalle.map((det: DetalleTec, index: number) => {
             return (
-                <li key={index} className="d-flex d-flex align-items-center">{det.tecnologia}: {star(det)}</li>
+                <li key={index} className="d-flex d-flex align-items-center w-100">
+                    <span className="col-4 col-sm-3 col-md-4 col-lg-3">{det.tecnologia}: </span>
+                    <span className="col-6">{star(det)}</span>
+                </li>
             )
         })
         return (
-            <div className="col-12 col-md-6 d-flex mb-4 px-0" key={index}>
-                <div className="col-12 col-md-11 m-auto px-3 py-3 divTec">
+            <div className="col-12 col-md-6 d-flex mb-4 px-0" key={index} >
+                <div className="col-12 col-md-11 m-auto px-3 py-3 divTec" style={{ position: 'relative', height: '100%' }}>
                     <h3 className="h4">{e.titulo}</h3>
-                    <ul>
+                    <ul className=" ps-0">
                         {list}
                     </ul>
                 </div>
