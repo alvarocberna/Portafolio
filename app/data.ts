@@ -3,11 +3,29 @@ export const data = {
     perfilPersonal: {
         fotoPerfil: '/imgs/img_alvaro_cañete.jpg',
         descripcion: [
-            'Mi nombre es Álvaro Cañete, estudiante de la carrera de Analista Programador Computacional - Duoc UC.',
-            'Como se puede apreciar en las secciones de tecnologías y proyectos, tengo experiencia tanto en las áreas de desarrollo front-end y back-end. Personalmente, tengo un gran interés por el desarrollo back-end, área en la cual me encuentro perfeccionando con la tecnología NodeJS.',
-            'Actualmente me encuentro en la búsqueda de practica profesional, la cual, según lo establecido por Duoc, debe ser inscrita la semana del 12 al 16 de mayo, para dar inicio el 19 de mayo, con una duración de 360 horas.',
-            'Busco de preferencia una practica pagada, aunque todo es conversable, dependiendo de la posibilidad de continuidad, área tecnológica y modalidad de trabajo.',
-            'Si te interesa mi perfil y quieres hacerme una oferta, te invito a que me escribas a continuación:'
+            '¿Qué ofrezco?',
+            [
+
+                'Soy un desarrollador con conocimientos en una amplia gama de tecnologías, como las relacionadas con el area front-end (react-angular), back-end (nodejs-express-docker) y base de datos (oracle-mysql-mongodb). Puedes conocer mi stack completo de tecnologías en mi portafolio: alvarocanete.cl.',
+                'Flexibilidad y disposición para siempre aprender nuevas tecnologías que sean requeridas en el mercado.',
+                'Al ser esta la segunda carrera que obtengo, habiendo trabajado anteriormente en el area de la salud, tengo una mente abierta para comprender otras áreas diferentes a la programación como tal.',
+                'Poseo un gran sentido de responsabilidad y compromiso con las tareas y proyectos que se me otorgan.',
+                'Por último, un aspecto clave para mi trabajo, el cual involucra tratar con personas día a día, ha sido tener un buen nivel de comunicación interpersonal, aspecto que me permite comunicar y relacionar efectivamente con otras personas de mi ambiente laboral.'
+            ],
+            '¿Qué busco?',
+            [
+                'Práctica profesional presencial (viña) o hibrida (stgo).',
+                'Ambiente donde pueda poner en práctica mis habilidades y crecer profesionalmente.',
+                'Posibilidad de continuidad y/o practica remunerada.',
+            ],
+            'Detalles practica',
+            [
+                'Inscripción (ideal) y validación entre el 12 y 16 de mayo.',
+                'Inicio (ideal) a partir del 19 de mayo.',
+                'Duración de 360 horas.',
+                'Cuento con seguro estudiantil: sí.',
+                'La empresa de practica debe estar validada frente al SII.'
+            ]
         ]
     },
     tecnologias: [
