@@ -81,17 +81,30 @@ export const data = {
     ],
     proyectos: [
         {
-            titulo: 'Página web Ciclolegal',
-            descripcion: 'Proyecto web para el equipo de abogados Ciclolegal.',
+            titulo: 'Servidor backend portafolio',
+            descripcion: 'Proyecto correspondiente al backend de esta página web, el cual provee el servicio para enviar correos electrónicos',
+            tecnologias: [
+                'Typescript',
+                'Nodejs',
+                'Express'
+            ],
+            imgProyecto: '/imgs/img_proyecto_ciclolegal.png',
+            linkProyecto: 'https://github.com/alvarocberna/Portafolio-Back.git',
+            imgCode: '/imgs/img_code.jpg',
+            linkRepositorio: 'https://github.com/alvarocberna/Portafolio-Back.git'
+        },
+        {
+            titulo: 'Página web Nutreactivo',
+            descripcion: 'Proyecto web personal.',
             tecnologias: [
                 'Javascript',
                 'Nextjs',
                 'Bootstrap'
             ],
-            imgProyecto: '/imgs/img_proyecto_ciclolegal.png',
-            linkProyecto: 'https://ciclolegal.cl/',
+            imgProyecto: '/imgs/img_proyecto_nutreactivo.png',
+            linkProyecto: 'https://www.nutreactivo.cl/',
             imgCode: '/imgs/img_code.jpg',
-            linkRepositorio: 'https://github.com/alvarocberna/Ciclolegal_front.git'
+            linkRepositorio: 'https://github.com/alvarocberna/Nutreactivo_front.git'
         },
         {
             titulo: 'Sistema de reserva Pacific Reef',
@@ -107,17 +120,17 @@ export const data = {
             linkRepositorio: 'https://github.com/alvarocberna/ProjectPacificReef.git'
         },
         {
-            titulo: 'Página web Nutreactivo',
-            descripcion: 'Proyecto web personal.',
+            titulo: 'Página web Ciclolegal',
+            descripcion: 'Proyecto web para el equipo de abogados Ciclolegal.',
             tecnologias: [
                 'Javascript',
                 'Nextjs',
                 'Bootstrap'
             ],
-            imgProyecto: '/imgs/img_proyecto_nutreactivo.png',
-            linkProyecto: 'https://www.nutreactivo.cl/',
+            imgProyecto: '/imgs/img_proyecto_ciclolegal.png',
+            linkProyecto: 'https://ciclolegal.cl/',
             imgCode: '/imgs/img_code.jpg',
-            linkRepositorio: 'https://github.com/alvarocberna/Nutreactivo_front.git'
+            linkRepositorio: 'https://github.com/alvarocberna/Ciclolegal_front.git'
         }
     ],
     contacto: {
