@@ -1,14 +1,7 @@
-import Image from "next/image";
 import { data } from "../data";
 import '../globals.css';
 
 const { proyectos } = data;
-
-interface IntVerProyecto {
-    link: string,
-    img: string,
-    btn: string
-}
 
 export default function Projects() {
     const contenedor = proyectos.map((proy, index) => {

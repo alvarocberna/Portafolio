@@ -25,6 +25,7 @@ export default function SendEmailForm() {
       });
 
       const result = await res.json();
+      console.log(result);
       setStatus('enviado');
     } catch (error) {
       setStatus('Error al enviar el correo');

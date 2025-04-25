@@ -1,6 +1,5 @@
 import React from 'react'
 import '../globals.css';
-import { data } from '../data';
 import SendEmailForm from '../services/email';
 
 
