@@ -1,13 +1,10 @@
 import React from 'react'
 import '../globals.css';
-import Image from 'next/image';
 import { data } from '../data';
-const { contacto } = data;
 import SendEmailForm from '../services/email';
 
 
 export default function Contacto() {
-
 
     return (
         <div className='w-100 d-flex flex-column mb100' id='contacto'>
@@ -16,7 +13,6 @@ export default function Contacto() {
                 <div className='w-100 d-flex flex-column flex-md-row m-auto'>
                     <SendEmailForm />
                 </div>
-
             </div>
         </div>
     )

@@ -11,7 +11,6 @@ export default function SendEmailForm() {
     e.preventDefault();
     setStatus('Enviando...');
     try {
-      const local = 'http://localhost:3000/api/email';
       const railway = 'https://portafolio-back-production-b31d.up.railway.app/api/email';
       const res = await fetch(railway, {
         method: 'POST',
@@ -26,7 +25,7 @@ export default function SendEmailForm() {
       });
 
       const result = await res.json();
-      setStatus(`${result}`);
+      setStatus('enviado');
     } catch (error) {
       setStatus('Error al enviar el correo');
       console.error(error);
@@ -44,7 +43,7 @@ export default function SendEmailForm() {
         <button type='submit' className='col-12 col-sm-9 col-md-6 m-auto bg-primary py-2  text-white rounded'
           style={{ border: 'none' }}>Enviar Mensaje</button>
       </form>
-      {/* <p>{status}</p> */}
+      <p>{status}</p>
     </div>
   )
 

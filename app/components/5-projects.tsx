@@ -10,21 +10,6 @@ interface IntVerProyecto {
     btn: string
 }
 
-function VerProyecto({ link, img, btn }: IntVerProyecto) {
-    return (
-        <div className="col-12 col-lg-6 d-flex">
-            <a href={link} className="col-12 col-md-11 m-auto d-flex justify-content-center align-items-center mb-3 proyImg" target='_blank'
-                rel='noreferrer' style={{ position: 'relative' }}>
-                <Image src={img} alt="..." width={300} height={300} className="col-12 h-100" style={{ objectFit: 'cover', position: 'absolute', borderRadius: '15px' }} />
-                <div className="proyImgFilter" style={{ position: 'absolute' }} />
-                <button className="bg-primary px-4 py-2 rounded m-auto" style={{ border: 'none', color: 'white', position: 'absolute' }}>
-                    {btn}
-                </button>
-            </a>
-        </div>
-    )
-}
-
 export default function Projects() {
     const contenedor = proyectos.map((proy, index) => {
         const tecnologia = proy.tecnologias.map((tec, index) => {
