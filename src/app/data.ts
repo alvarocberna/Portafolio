@@ -1,53 +1,40 @@
 
 export const data = {
+    portada: {
+        foto: '/imgs/img-portada-5.jpg'
+    },
     perfilPersonal: {
-        fotoPerfil: '/imgs/img_alvaro_cañete.jpg',
         descripcion: [
-            '¿Qué ofrezco?',
-            [
-
-                'Soy un desarrollador con conocimientos en una amplia gama de tecnologías, como las relacionadas con el area front-end (react-angular), back-end (nodejs-express-docker) y base de datos (oracle-mysql-mongodb). Puedes conocer mi stack completo de tecnologías en mi portafolio: alvarocanete.cl.',
-                'Flexibilidad y disposición para siempre aprender nuevas tecnologías que sean requeridas en el mercado.',
-                'Al ser esta la segunda carrera que obtengo, habiendo trabajado anteriormente en el area de la salud, tengo una mente abierta para comprender otras áreas diferentes a la programación como tal.',
-                'Poseo un gran sentido de responsabilidad y compromiso con las tareas y proyectos que se me otorgan.',
-                'Por último, un aspecto clave para mi trabajo, el cual involucra tratar con personas día a día, ha sido tener un buen nivel de comunicación interpersonal, aspecto que me permite comunicar y relacionar efectivamente con otras personas de mi ambiente laboral.'
-            ],
-            '¿Qué busco?',
-            [
-                'Práctica profesional presencial (viña) o hibrida (stgo).',
-                'Ambiente donde pueda poner en práctica mis habilidades y crecer profesionalmente.',
-                'Posibilidad de continuidad y/o practica remunerada.',
-            ],
-            'Detalles practica',
-            [
-                'Inscripción (ideal) y validación entre el 12 y 16 de mayo.',
-                'Inicio (ideal) a partir del 19 de mayo.',
-                'Duración de 360 horas.',
-                'Cuento con seguro estudiantil: sí.',
-                'La empresa de practica debe estar validada frente al SII.'
-            ]
+            'Mi nombre es Álvaro Cañete Berna.',
+            'Actualmente tengo 30 años.',
+            'Egresado de Analísta Programador Computacional DuocUC.',
+            'Desarrollador de aplicaciones web.',
         ]
     },
     tecnologias: [
         {
             titulo: 'Lenguajes',
+            color: '#2E86C1',
             detalle: [
                 { tecnologia: 'Python', valor: 2 },
                 { tecnologia: 'Javascript', valor: 3 },
                 { tecnologia: 'Typescript', valor: 3 },
-                { tecnologia: 'Java', valor: 1 },
             ]
         },
         {
-            titulo: 'Sistemas de gestión de bases de datos',
+            titulo: 'Database & Cloud',
+            color: '#D5BFA3',
             detalle: [
                 { tecnologia: 'Oracle', valor: 3 },
                 { tecnologia: 'MongoDB', valor: 2 },
                 { tecnologia: 'MySQL', valor: 2 },
+                { tecnologia: 'Certificado en AWS', valor: 2 },
+
             ]
         },
         {
             titulo: 'Front-end',
+            color: '#F4B266',
             detalle: [
                 { tecnologia: 'HTML', valor: 2 },
                 { tecnologia: 'CSS', valor: 2 },
@@ -55,16 +42,19 @@ export const data = {
                 { tecnologia: 'NextJS', valor: 2 },
                 { tecnologia: 'Angular', valor: 2 },
                 { tecnologia: 'Bootstrap', valor: 2 },
+                { tecnologia: 'Tailwind', valor: 2 },
                 { tecnologia: 'SEO', valor: 3 },
 
             ]
         },
         {
             titulo: 'Back-end',
+            color: '#3e3e3e',
             detalle: [
                 { tecnologia: 'Nodejs', valor: 3 },
                 { tecnologia: 'Express', valor: 2 },
                 { tecnologia: 'Django', valor: 2 },
+                { tecnologia: 'Nestjs', valor: 2 },
                 { tecnologia: 'Docker', valor: 2 },
                 { tecnologia: 'Postman', valor: 2 },
                 { tecnologia: 'Jest', valor: 1 },
@@ -74,8 +64,10 @@ export const data = {
         },
         {
             titulo: 'Otras tecnologías & herramientas',
+            color: '#5DADE2',
             detalle: [
                 { tecnologia: 'Git', valor: 3 },
+                { tecnologia: 'Github', valor: 3 },
             ]
         },
     ],

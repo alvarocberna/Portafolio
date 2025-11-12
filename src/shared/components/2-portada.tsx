@@ -1,0 +1,18 @@
+import React from 'react'
+import Image from 'next/image'
+import { data } from "../../app/data";
+const {portada} = data;
+import { Navbar } from './1-navbar';
+import {Writer} from './writer';
+
+export function Portada() {
+    const imgPortada = portada.foto;
+    return (
+        <div className="position-relative w-full d-flex flex-column" 
+             style={{ height: '700px', marginBottom: '100px'}}>
+            <Navbar/>
+            <Writer/>
+            <Image src={imgPortada} alt='img portada' fill={true} style={{objectFit: 'cover'}}/>
+        </div>
+    )
+}

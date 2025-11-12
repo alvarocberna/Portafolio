@@ -1,9 +1,9 @@
 import React from 'react'
-import '../globals.css';
-import SendEmailForm from '../services/email';
+import '../../app/globals.css';
+import SendEmailForm from '../../app/services/email';
 
 
-export default function Contacto() {
+export function Contacto() {
 
     return (
         <div className='w-100 d-flex flex-column mb100' id='contacto'>

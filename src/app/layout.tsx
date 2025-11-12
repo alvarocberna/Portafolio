@@ -3,7 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./globals.css";
 import './page.module.css';
-import Navbar from "./components/1-navbar";
+import {Navbar} from "../shared";
 import 'bootstrap/dist/css/bootstrap.css';
 import './style.scss';
 
@@ -30,7 +30,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        <Navbar />
+        {/* <Navbar /> */}
         {children}
       </body>
     </html>
