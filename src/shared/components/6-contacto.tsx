@@ -3,11 +3,9 @@ import React from 'react'
 import '../../app/globals.css';
 import SendEmailForm from '../../app/services/email';
 import { useState } from 'react';
-import exp from 'constants';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faCircleXmark} from '@fortawesome/free-regular-svg-icons'
 import {faEllipsis} from '@fortawesome/free-solid-svg-icons'
-import { height } from '@fortawesome/free-brands-svg-icons/fa11ty';
 
 export function Contacto() {
     const [expanded, setExpanded] = useState(false);

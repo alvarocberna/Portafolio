@@ -1,7 +1,5 @@
 import { data } from "../../app/data";
 const { tecnologias } = data;
-import iconstar from '../../../public/imgs/img_blue_star.png';
-import Image from "next/image";
 import '../../app/globals.css';
 
 interface DetalleTec {
