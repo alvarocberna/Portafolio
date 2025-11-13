@@ -1,4 +1,4 @@
-import {Portada, SobreMi, Tecnologias, Projects, Contacto, Footer} from "../shared";
+import {Portada, SobreMi, Tecnologias, Projects, Footer} from "../shared";
 import './globals.css';
 
 export default function Home() {
@@ -8,7 +8,6 @@ export default function Home() {
       <SobreMi />
       <Tecnologias />
       <Projects />
-      {/* <Contacto /> */}
       <Footer />
     </div>
   );
