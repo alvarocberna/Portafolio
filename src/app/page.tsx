@@ -8,7 +8,7 @@ export default function Home() {
       <SobreMi />
       <Tecnologias />
       <Projects />
-      <Contacto />
+      {/* <Contacto /> */}
       <Footer />
     </div>
   );

@@ -4,6 +4,8 @@ import { data } from "../../app/data";
 import Image from "next/image";
 import '../../app/globals.css';
 const { proyectos } = data;
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPlus } from "@fortawesome/free-solid-svg-icons";
 
 type Proyecto = {
     titulo: string
@@ -21,14 +23,14 @@ const CardProyecto = (props: Proyecto) => {
         // Container
         <div className="col-12 col-sm-6 col-md-6 col-lg-4 d-flex mb-5 px-0">
            {/* contenedor principal - contiene 1) el contenedor expandible y 2) el btn expandir y ver rep y proy */}
-            <div className='col-12 col-sm-11 d-flex flex-column mx-auto justify-content-between border' 
-                    style={{borderRadius: '15px', background: '#3e3e3e'}}>
+            <div className='col-12 col-sm-11 d-flex flex-column mx-auto justify-content-between shadow' 
+                    style={{borderRadius: '10px', background: '#3e3e3e'}}>
                 {/* contenedor secundario - tiene la img, el contenido y el degradado*/}
                 <div className="w-full d-flex flex-column position-relative mb-3" style={{minHeight: '350px', maxHeight: expanded ? 'none' : '350px', overflow: 'hidden', alignItems: 'start'}}>
                     {/* contenido - tiene su propio div para facilitar el posicionamiento del contenido*/}
                     <div className='d-flex flex-column col-12' style={{position: 'relative', top: '0'}}>
                         <div className='position-relative'  style={{width: '100%', height: '200px', top: '0px'}}>
-                            <Image src={props.imgProyecto} alt='Abogado' fill style={{ objectFit: "cover",  objectPosition: "top", borderRadius: '15px 15px 0px 0px'}}/>
+                            <Image src={props.imgProyecto} alt='Abogado' fill style={{ objectFit: "cover",  objectPosition: "top", borderRadius: '10px 10px 0px 0px'}}/>
                         </div>
                         <div className='w-full d-flex flex-column py-3 px-3'>
                             <h2 className="col-12 h4 mb-2 text-start text-white">{props.titulo}</h2>
@@ -47,16 +49,17 @@ const CardProyecto = (props: Proyecto) => {
                             expanded ?
                             <p className="m-auto" style={{fontSize: '20px'}}>-</p> 
                             : 
-                            <p className="m-auto" style={{fontSize: '20px'}}>+</p>
+                            <FontAwesomeIcon className="m-auto" icon={faPlus}/>
+                            // <p className="m-auto border px-0 py-0" style={{fontSize: '20px'}}>+</p>
                          }
                     </button>
                     <a href={props.linkProyecto} target="_blank" className="col-5 d-flex" style={{textDecoration: 'none', height: '35px'}}>
-                        <button className="col-11 m-auto rounded text-white h-100" style={{ border: 'none', background: '#d4b49e' }}>
+                        <button className="col-11 m-auto rounded text-white h-100" style={{ border: '1px solid white', background: 'none'}}>
                             Proyecto
                         </button>
                     </a>
                     <a href={props.linkRepositorio} target="_blank" className="col-5 d-flex" style={{textDecoration: 'none', height: '35px'}}>
-                        <button className="col-11 m-auto rounded text-white h-100" style={{ border: 'none', background: '#d4b49e' }}>
+                        <button className="col-11 m-auto rounded text-white h-100" style={{ border: '1px solid white', background: 'none'}}>
                             Repositorio
                         </button>
                     </a>

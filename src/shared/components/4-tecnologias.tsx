@@ -20,7 +20,7 @@ export function Tecnologias() {
             )
         })
         return (
-            <div className="col-12 col-md-4 d-flex mb-4 px-0" key={index}>
+            <div className="col-12 col-md-6 col-lg-4 d-flex mb-4 px-0" key={index}>
                 <div className="col-12 col-md-11 m-auto px-3 py-3 divTec" 
                     style={{background: `${e.color}`, position: 'relative', height: '100%' }}>
                     <h3 className="h4 text-white">{e.titulo}</h3>

@@ -10,7 +10,7 @@ export function Portada() {
     return (
         <div className="position-relative w-full d-flex flex-column" 
              style={{ height: '700px', marginBottom: '100px'}}>
-            <Navbar/>
+            {/* <Navbar/> */}
             <Writer/>
             <Image src={imgPortada} alt='img portada' fill={true} style={{objectFit: 'cover'}}/>
         </div>

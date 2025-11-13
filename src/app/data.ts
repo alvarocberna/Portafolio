@@ -22,7 +22,7 @@ export const data = {
             ]
         },
         {
-            titulo: 'Database & Cloud',
+            titulo: 'Base de datos & Nube',
             color: '#D5BFA3',
             detalle: [
                 { tecnologia: 'Oracle', valor: 3 },
@@ -33,7 +33,7 @@ export const data = {
             ]
         },
         {
-            titulo: 'Front-end',
+            titulo: 'Frontend',
             color: '#F4B266',
             detalle: [
                 { tecnologia: 'HTML', valor: 2 },
@@ -48,7 +48,7 @@ export const data = {
             ]
         },
         {
-            titulo: 'Back-end',
+            titulo: 'Backend',
             color: '#3e3e3e',
             detalle: [
                 { tecnologia: 'Nodejs', valor: 3 },
@@ -80,7 +80,7 @@ export const data = {
                 'Nodejs',
                 'Express'
             ],
-            imgProyecto: '/imgs/img_proyecto_ciclolegal.png',
+            imgProyecto: '/imgs/img_code.jpg',
             linkProyecto: 'https://github.com/alvarocberna/Portafolio-Back.git',
             imgCode: '/imgs/img_code.jpg',
             linkRepositorio: 'https://github.com/alvarocberna/Portafolio-Back.git'

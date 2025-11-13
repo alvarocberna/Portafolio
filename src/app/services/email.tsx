@@ -11,7 +11,8 @@ export default function SendEmailForm() {
     e.preventDefault();
     setStatus('Enviando...');
     try {
-      const railway = 'https://portafolio-back-production-b31d.up.railway.app/api/email';
+    const railway = 'https://portafolio-back-production-b31d.up.railway.app/api/email'
+      // const render = 'http://localhost:3000/api/email';
       const res = await fetch(railway, {
         method: 'POST',
         headers: {
