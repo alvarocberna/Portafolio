@@ -24,7 +24,7 @@ const CardProyecto = (props: Proyecto) => {
         <div className="col-12 col-sm-6 col-md-6 col-lg-4 d-flex mb-5 px-0">
            {/* contenedor principal - contiene 1) el contenedor expandible y 2) el btn expandir y ver rep y proy */}
             <div className='col-12 col-sm-11 d-flex flex-column mx-auto justify-content-between shadow' 
-                    style={{borderRadius: '10px', background: '#3e3e3e'}}>
+                    style={{borderRadius: '10px', background: '#2b7fcf'}}>
                 {/* contenedor secundario - tiene la img, el contenido y el degradado*/}
                 <div className="w-full d-flex flex-column position-relative mb-3" style={{minHeight: '350px', maxHeight: expanded ? 'none' : '350px', overflow: 'hidden', alignItems: 'start'}}>
                     {/* contenido - tiene su propio div para facilitar el posicionamiento del contenido*/}
@@ -39,18 +39,18 @@ const CardProyecto = (props: Proyecto) => {
                     </div>
                     {/* degradado */}
                     {!expanded &&  
-                        <div style={{position: 'absolute', bottom: 0, left: 0, right: 0, height: '50px', background: 'linear-gradient(to bottom, rgba(255,255,255,0), rgba(62,62,62,1))'}}/>
+                        <div style={{position: 'absolute', bottom: 0, left: 0, right: 0, height: '50px', background: 'linear-gradient(to bottom, rgba(255,255,255,0), rgba(43, 127, 207, 1))'}}/>
                     }
                 </div>
+                {/* botones */}
                 <div className="col-11 m-auto d-flex justify-content-between mb-3">
-                    <button onClick={() => setExpanded(!expanded)} className='d-flex col-2 rounded text-white' 
-                        style={{background: '#2b7fcf', height: '35px', border: 'none'}}>
+                    <button onClick={() => setExpanded(!expanded)} className='d-flex col-2 rounded' 
+                        style={{background: 'white', height: '35px', border: 'none', color: '#2b7fcf'}}>
                         {
                             expanded ?
                             <p className="m-auto" style={{fontSize: '20px'}}>-</p> 
                             : 
                             <FontAwesomeIcon className="m-auto" icon={faPlus}/>
-                            // <p className="m-auto border px-0 py-0" style={{fontSize: '20px'}}>+</p>
                          }
                     </button>
                     <a href={props.linkProyecto} target="_blank" className="col-5 d-flex" style={{textDecoration: 'none', height: '35px'}}>

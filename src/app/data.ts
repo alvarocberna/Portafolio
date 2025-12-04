@@ -73,6 +73,19 @@ export const data = {
     ],
     proyectos: [
         {
+            titulo: 'Nutriapp',
+            descripcion: 'Aplicación de uso médico, construida con las tecnologías de nextjs (frontend) y nestjs (backend), en base al lenguaje typescript. El frontend sigue una organización feature-based, mientras que el backend sigue los principios de arquitectura limpia, separando el proyecto en capas. Utiliza un sistema de autenticación en base a JWT. Por último, la base de datos sigue un esquema multi-tenant con esquemas compartidos, ideal para múltiples clientes pequeños.',
+            tecnologias: [
+                'Typescript',
+                'Nodejs',
+                'Express'
+            ],
+            imgProyecto: '/imgs/img_nutriapp.png',
+            linkProyecto: 'https://www.youtube.com/watch?v=v68JUz08VYs&t=28s',
+            imgCode: '/imgs/img_code.jpg',
+            linkRepositorio: 'https://google.com'
+        },
+        {
             titulo: 'Servidor backend portafolio',
             descripcion: 'Proyecto correspondiente al backend de esta página web, el cual provee el servicio para enviar correos electrónicos',
             tecnologias: [
