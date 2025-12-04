@@ -23,6 +23,7 @@ export default function SendEmailForm() {
         setMensaje('');
       }, 3000)
     }catch(error){
+      console.log(error)
       setColor('#ff3131');
       setStatus('Error');
       setTimeout(() => {
