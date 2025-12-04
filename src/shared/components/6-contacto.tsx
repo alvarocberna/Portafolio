@@ -17,7 +17,7 @@ export function Contacto() {
             {
                 expanded ? 
                 <div className='px-3 py-2 rounded col-2 bg-white'
-                    style={{position: 'fixed', height: '280px', bottom: '10px', right: '10px', border: '1px solid #b3b3b3', transition: '0.4s'}}>
+                    style={{position: 'fixed', height: '280px', width: '250px', bottom: '10px', right: '10px', border: '1px solid #b3b3b3', transition: '0.4s'}}>
                     {
                         view ?
                         <div className='d-flex flex-column justify-content-evenly align-items-center w-100 h-100'>
