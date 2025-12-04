@@ -18,8 +18,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Álvaro Cañete Portafolio",
-  description: "Portafolio profesional desarrollador web Álvaro Cañete Berna",
+  title: "Álvaro Cañete Berna, Desarrollador Web",
+  description: "Portafolio profesional de Álvaro Cañete Berna, desarrollador web y nutricionista",
 };
 
 export default function RootLayout({

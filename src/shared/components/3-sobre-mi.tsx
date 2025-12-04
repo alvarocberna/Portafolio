@@ -1,4 +1,4 @@
-import { data } from "../../app/data";
+import { data } from "../data/data";
 const { perfilPersonal } = data;
 
 export function SobreMi() {

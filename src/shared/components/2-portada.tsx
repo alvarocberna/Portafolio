@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import { data } from "../../app/data";
+import { data } from "../data/data";
 const {portada} = data;
 import {Writer} from './writer';
 

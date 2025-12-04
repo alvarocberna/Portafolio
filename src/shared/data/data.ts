@@ -5,10 +5,9 @@ export const data = {
     },
     perfilPersonal: {
         descripcion: [
-            'Mi nombre es Álvaro Cañete Berna.',
-            'Actualmente tengo 30 años.',
-            'Egresado de Analísta Programador Computacional DuocUC.',
-            'Desarrollador de aplicaciones web.',
+            'Mi nombre es Álvaro Cañete Berna, tengo 30 años y vivo en Viña del Mar.',
+            'Soy titulado de la carrera Analista Programador Computacional de DuocUC (2025), aprobando con tres sellos de distinción.',
+            'También, soy nutricionista egresado de la Universidad de Valparaíso (2019), carrera que ejerzo hasta el día de hoy.',
         ]
     },
     tecnologias: [
@@ -73,8 +72,8 @@ export const data = {
     ],
     proyectos: [
         {
-            titulo: 'Nutriapp',
-            descripcion: 'Aplicación de uso médico, construida con las tecnologías de nextjs (frontend) y nestjs (backend), en base al lenguaje typescript. El frontend sigue una organización feature-based, mientras que el backend sigue los principios de arquitectura limpia, separando el proyecto en capas. Utiliza un sistema de autenticación en base a JWT. Por último, la base de datos sigue un esquema multi-tenant con esquemas compartidos, ideal para múltiples clientes pequeños.',
+            titulo: 'Nutriapp - app web',
+            descripcion: 'Aplicación de uso médico para el registro de pacientes y sus datos médicos. Proyecto desarrollado con los frameworks nextjs y nestj en base al lenguaje typescript con base de datos relacional (postgresql). Frontend: organización feature-based. Backend: arquitectura limpia, separando el proyecto en capas. Auth: En base a JWT. DB: multi-tenant con esquemas compartidos.',
             tecnologias: [
                 'Typescript',
                 'Nodejs',
@@ -86,8 +85,8 @@ export const data = {
             linkRepositorio: 'https://google.com'
         },
         {
-            titulo: 'Servidor backend portafolio',
-            descripcion: 'Proyecto correspondiente al backend de esta página web, el cual provee el servicio para enviar correos electrónicos',
+            titulo: 'Servidor de correo electrónico',
+            descripcion: 'Servidor backend dedicado al envío de correo electrónio (utilizado en la página web actual). Implementación de librería express y servicio resend.',
             tecnologias: [
                 'Typescript',
                 'Nodejs',
@@ -99,8 +98,8 @@ export const data = {
             linkRepositorio: 'https://github.com/alvarocberna/Portafolio-Back.git'
         },
         {
-            titulo: 'Página web Nutreactivo',
-            descripcion: 'Proyecto web personal.',
+            titulo: 'Nutreactivo - página web',
+            descripcion: 'Página web de uso profesional. Desarrollado con la tecnología nextjs.',
             tecnologias: [
                 'Javascript',
                 'Nextjs',
@@ -112,8 +111,8 @@ export const data = {
             linkRepositorio: 'https://github.com/alvarocberna/Nutreactivo_front.git'
         },
         {
-            titulo: 'Sistema de reserva Pacific Reef',
-            descripcion: 'Sistema de reserva hotelera, desarrollado en el ramo de Desarrollo de Software. Este sistema tiene como fin optimizar el proceso de reservas a los clientes del hotel, así como facilitar la gestión de reservas e información del hotel por parte de los empleados.',
+            titulo: 'Pacific Reef - app web',
+            descripcion: 'Sistema de reserva hotelera (desarrollado en el ramo de Desarrollo de Software). Sistema: Desarrollado con el framework Django en base al lenguaje Pyton, aplicando patrón MVC. DB: En base a postgresql.',
             tecnologias: [
                 'Python',
                 'Django',
@@ -125,8 +124,8 @@ export const data = {
             linkRepositorio: 'https://github.com/alvarocberna/ProjectPacificReef.git'
         },
         {
-            titulo: 'Página web Ciclolegal',
-            descripcion: 'Proyecto web para el equipo de abogados Ciclolegal.',
+            titulo: 'Ciclolegal - página web',
+            descripcion: 'Proyecto web para el equipo de abogados Ciclolegal. Desarrollado con el framework nextjs y lenguaje typescript.',
             tecnologias: [
                 'Javascript',
                 'Nextjs',

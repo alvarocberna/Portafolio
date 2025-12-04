@@ -1,6 +1,6 @@
 'use client'
 import { useState } from "react";
-import { data } from "../../app/data";
+import { data } from "../data/data";
 import Image from "next/image";
 import '../../app/globals.css';
 const { proyectos } = data;

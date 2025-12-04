@@ -1,4 +1,4 @@
-import { data } from "../../app/data";
+import { data } from "../data/data";
 const { tecnologias } = data;
 import '../../app/globals.css';
 
